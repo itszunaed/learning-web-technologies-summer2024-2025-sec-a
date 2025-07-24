@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JS Practice</title>
+</head>
+<body>
+    
+
+    
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+
+
+
+    <label for="pw">Password:</label>
+  <input type="password" id="pw" name="pw"><br><br>
+
+  <input type="submit" value="Submit" onclick="validate()">
+</form>
+
+
+
+<script>
+
+
+function validate(){
+
+                let username = document.getElementById('username').value;
+                if(username == ""){
+                    let msg = document.getElementById('msg');
+                        msg.style.color = "red";
+                        msg.innerHTML = "please type username first!";
+
+                    
+                }else{
+                    let head = document.getElementsByTagName('h1')[0];
+                    head.innerHTML = username
+                    document.getElementById('msg').innerHTML = "";
+                }
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
