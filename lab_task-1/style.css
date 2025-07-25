@@ -1,0 +1,16 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+}
+
+a{
+    margin-left: 15px;
+}
+
+.centertext{
+    text-align: center;
+}
