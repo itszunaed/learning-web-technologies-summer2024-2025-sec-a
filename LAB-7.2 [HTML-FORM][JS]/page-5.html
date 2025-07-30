@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task 2</title>
+</head>
+<body>
+    
+
+    <form action="page-6.html" name="page5" onsubmit="return validateForm()">
+    
+<fieldset>
+<legend>Degree:</legend> 
+  <input type="checkbox" id="ssc" name="ssc" value="ssc">
+  <label for="ssc">SSC</label>
+  <input type="checkbox" id="hsc" name="hsc" value="hsc">
+  <label for="hsc">HSC</label>
+  <input type="checkbox" id="bsc" name="bsc" value="bsc">
+  <label for="bsc">BSc</label><br>
+</fieldset>
+<input type="submit" value="Submit">
+    </form>
+
+
+
+<script>
+
+function validateForm() {
+ 
+  let ssc =document.forms["page5"]["ssc"];
+  let hsc =document.forms["page5"]["hsc"];
+  let bsc =document.forms["page5"]["bsc"];
+  
+  
+
+ 
+  if (ssc.checked || hsc.checked || bsc.checked) {
+    
+    return true;
+  }
+else{
+
+alert("At least one of them has to be selected");
+  return false;
+}
+}
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

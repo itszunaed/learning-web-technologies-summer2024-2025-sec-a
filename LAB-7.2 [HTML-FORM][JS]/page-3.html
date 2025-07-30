@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task 2</title>
+</head>
+<body>
+    
+
+    <form action="page-4.html" name="page3" onsubmit="return validateForm()">
+    
+<fieldset>
+    <legend>Gender:</legend> 
+    
+  <input type="radio" id="male" name="gender" value="Male">
+  <label for="male"> Male</label>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female"> Female</label>
+  <input type="radio" id="other" name="gender" value="Female">
+  <label for="other"> Other</label><br>
+
+    
+</fieldset>
+<input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+<script>
+
+function validateForm() {
+ 
+  let radios =document.forms["page3"]["gender"];
+  
+  
+  let isSelected = false;
+
+
+  for (let i= 0; i<radios.length; i++) {
+
+    if (radios[i].checked) {
+      isSelected =true;
+
+      break;
+    }
+  }
+
+ 
+  if (!isSelected) {
+    alert("select a gender");
+    return false;
+  }
+
+  return true;
+}
+</script>
+
+
+
+
+
+</body>
+</html>

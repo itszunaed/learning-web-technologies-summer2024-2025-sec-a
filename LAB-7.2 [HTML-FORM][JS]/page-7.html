@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task 2</title>
+</head>
+<body>
+    
+
+
+
+    <form action="page-8.html" name="page7" onsubmit="return validateForm()">
+
+        <fieldset>
+<legend>Profile Picture</legend>
+<label for="userid">User Id</label>
+<input type="text" id="userid" name="userid" value=""><br>
+<label for="file">Picture</label>
+<input type="file" id="file" name="file"><br>
+<input type="submit" value="Submit">
+        </fieldset><br>
+      
+
+
+    </form>
+
+
+    <script>
+
+   
+        function validateForm() {
+            
+            let userId = document.getElementById('userid').value;
+            let picture = document.getElementById('file').files.length;
+
+            
+            if (userId === "") {
+                alert("User Id cannot be empty");
+                return false;
+            }
+
+            if (isNaN(userId) || userId <= 0) 
+            {
+                alert("User Id must be a positive number");
+
+                return false;
+            }
+
+            
+            if (picture === 0) {
+                alert("Picture cannot be empty");
+                return false;
+            }
+
+          
+
+
+            return true;
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

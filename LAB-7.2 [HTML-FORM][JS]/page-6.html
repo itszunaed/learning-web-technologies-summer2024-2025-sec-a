@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAb Task 2</title>
+</head>
+<body>
+    
+    <form action="page-7.html" name="page6" onsubmit="return validateForm()">
+
+  <label for="bloodgroup">Blood Group</label>
+
+  <select id="bloodgroup" name="bloodgroup">
+    <option value="">None</option>
+    <option value="a+">A+</option>
+    <option value="a-">A-</option>
+    <option value="b+">B+</option>
+    <option value="b-">B-</option>
+    <option value="ab+">AB+</option>
+    <option value="ab-">AB-</option>
+    <option value="o+">O+</option>
+    <option value="o-">O-</option>
+
+  
+  </select><br>
+  <input type="submit" value="Submit">
+
+
+    </form>
+
+
+<script>
+
+function validateForm() {
+ 
+
+
+ if(document.getElementById('bloodgroup').value===""){
+  alert("Select blood group")
+  return false;
+ }
+
+ return true;
+}
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
